@@ -116,6 +116,10 @@ nav > a {
   border-radius: 2px;
 }
 
+.nav-link.activ {
+  color: var(--nav-hover);
+}
+
 /* contact */
 
 .contact {
@@ -185,13 +189,12 @@ nav > a {
   color: #ffffff;
 
   cursor: pointer;
-  transition: background-color var(--hover-time);
+  transition: background-color var(--hover-time), box-shadov var(--hover-time);
 }
 .button:hover,
 .button:focus {
   background-color: var(--nav-hover);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
 }
 
 /* section 2 */
@@ -373,6 +376,7 @@ nav > a {
   align-items: center;
   justify-content: center;
   color: #8e8f99;
+  transition: color var(--hover-time);
 }
 
 .customers-icon {
@@ -485,7 +489,8 @@ footer .logo-studio {
   color: #4d5ae5;
 
   cursor: pointer;
-  transition: background-color var(--hover-time);
+  transition: background-color var(--hover-time), color var(--hover-time),
+    border-color var(--hover-time), box-shadow var(--hover-time);
 }
 
 .filters-button:hover,
@@ -612,6 +617,15 @@ h2 {
   background-color: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+}
+
+.svg-close {
 }
 
 .is-hidden {
