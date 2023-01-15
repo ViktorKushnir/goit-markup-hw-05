@@ -100,6 +100,11 @@ nav > a {
   position: relative;
 }
 
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--nav-hover);
+}
+
 .activ::after {
   content: "";
   position: absolute;
@@ -110,10 +115,7 @@ nav > a {
   bottom: -28px;
   border-radius: 2px;
 }
-.nav-link:hover,
-.nav-link:focus {
-  color: var (--nav-hover);
-}
+
 
 /* contact */
 
